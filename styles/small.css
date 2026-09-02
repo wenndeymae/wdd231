@@ -28,7 +28,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--background-color);
 
     min-height: 76px;
     padding: 0.75rem 1rem;
@@ -64,9 +64,9 @@ header {
     height: 44px;
 
     background: transparent;
-    color: white;
+    color: var(--background-color);
 
-    border: 2px solid white;
+    border: 2px solid var(--background-color);
     border-radius: 5px;
 
     display: grid;
@@ -89,7 +89,7 @@ header {
 
 .navigation {
     display: none;
-    background-color: #102f47;
+    background-color: var(--primary-color);
 }
 
 .navigation.show {
@@ -108,12 +108,12 @@ header {
 .navigation a {
     display: block;
 
-    color: white;
+    color: var(--background-color);
     text-decoration: none;
 
     padding: 0.9rem 1rem;
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .navigation a:hover,
@@ -160,7 +160,7 @@ h1 {
 
     overflow: hidden;
 
-    box-shadow: 0 3px 10px rgba(23, 63, 95, 0.12);
+    box-shadow: 0 3px 10px var(--border-color);
 }
 
 .card h2 {
@@ -169,7 +169,7 @@ h1 {
     padding: 0.75rem 1rem;
 
     background-color: var(--primary-color);
-    color: white;
+    color: var(--background-color);
 
     font-size: 1.05rem;
 }
@@ -229,7 +229,7 @@ h1 {
     border: 2px solid var(--primary-color);
     border-radius: 5px;
 
-    background-color: white;
+    background-color: var(--background-color);
     color: var(--primary-color);
 
     font-weight: 600;
@@ -239,7 +239,7 @@ h1 {
 .filter-button:focus-visible,
 .filter-button.active {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--background-color);
 }
 
 /* ================================
@@ -260,7 +260,7 @@ h1 {
     border: 2px solid var(--border-color);
     border-radius: 6px;
 
-    background-color: white;
+    background-color: var(--background-color);
 }
 
 .course-card.completed {
@@ -303,7 +303,7 @@ h1 {
 
 footer {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--background-color);
 
     padding: 1.5rem 1rem;
 
@@ -337,7 +337,7 @@ footer p {
     padding: 0.6rem 0.8rem;
 
     color: var(--primary-color);
-    background-color: white;
+    background-color: var(--background-color);
 
     text-decoration: none;
 
