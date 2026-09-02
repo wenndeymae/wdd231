@@ -49,12 +49,12 @@
     .navigation a {
         padding: 0.9rem 1.25rem;
 
-        border-bottom: 3px solid transparent;
+        border-bottom: 3px solid var(--transparent-color);
     }
 
     .navigation a:hover,
     .navigation .current a {
-        background-color: transparent;
+        background-color: var(--transparent-color);
         border-bottom-color: var(--accent-color);
     }
 
