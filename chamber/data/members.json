@@ -1,20 +1,22 @@
 [
-  {
-    "name": "Chingkeetea",
-    "address": "Velez-Gaerlan Corner Velez-Gaerlan Sts.,",
-    "phone": "0965 906 4101",
-    "website": "https://chingkeetea.com/",
-    "image": "member1.svg",
-    "level": 1,
-    "category": "Restaurant"
-  },
-  {
-    "name": "Anytime Fitness",
-    "address": "2/F, SM CDO Uptown Northwing, Masterson Ave, Carmen.,e",
-    "phone": "0917 687 8696",
-    "website": "https://www.anytimefitness.ph/",
-    "image": "member2.svg",
-    "level": 2,
-    "category": "Health"
-  }
-]   
+    {
+        "name": "Chingkeetea",
+        "address": "Velez-Gaerlan Corner Velez-Gaerlan Sts.",
+        "phone": "0965 906 4101",
+        "website": "https://chingkeetea.com/",
+        "image": "member1.webp",
+        "membership": 1,
+        "category": "Restaurant",
+        "description": "Chingkeetea is home to authentic Taiwanese tea drinks. We use only high-quality tealeaves handpicked from Taiwan, where milk tea is said to have originated."
+    },
+    {
+        "name": "Anytime Fitness",
+        "address": "2/F, SM CDO Uptown Northwing, Masterson Ave, Carmen.",
+        "phone": "0917 687 8696",
+        "website": "https://www.anytimefitness.ph/",
+        "image": "member2.webp",
+        "membership": 2,
+        "category": "Health",
+        "description": "Anytime Fitness helps you in creating a plan that truly fits your life. It means a coach and a community to support you in every possible way. And it means more options to work out anytime, anywhere."
+    }
+]

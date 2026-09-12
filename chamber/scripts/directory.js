@@ -46,16 +46,22 @@ function membershipName(level) {
 function displayMembers(members) {
     memberContainer.innerHTML = "";
 
-    members.forEach((member) => {
+    members.forEach((member, index) => {
         const card = document.createElement("article");
 
         card.className = "member-card";
+
+        const loading = index === 0 ? "eager" : "lazy";
+        const priority = index === 0 ? "high" : "auto";
 
         card.innerHTML = `
             <img
                 src="images/${member.image}"
                 alt="${member.name} business image"
-                loading="lazy"
+                width="400"
+                height="250"
+                loading="${loading}"
+                fetchpriority="${priority}"
             >
 
             <div class="member-card-content">
