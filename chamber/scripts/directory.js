@@ -51,7 +51,11 @@ function displayMembers(members) {
 
         card.className = "member-card";
 
+        // Load the first image immediately.
+        // Load the remaining images lazily.
         const loading = index === 0 ? "eager" : "lazy";
+
+        // Give the first image higher loading priority.
         const priority = index === 0 ? "high" : "auto";
 
         card.innerHTML = `
@@ -59,12 +63,13 @@ function displayMembers(members) {
                 src="images/${member.image}"
                 alt="${member.name} business image"
                 width="400"
-                height="250"
+                height="225"
                 loading="${loading}"
                 fetchpriority="${priority}"
             >
 
             <div class="member-card-content">
+
                 <h2>${member.name}</h2>
 
                 <p>
@@ -92,6 +97,7 @@ function displayMembers(members) {
                 <span class="membership">
                     ${membershipName(member.membership)}
                 </span>
+
             </div>
         `;
 
@@ -103,14 +109,35 @@ function displayMembers(members) {
 function setView(view) {
     const isList = view === "list";
 
-    memberContainer.classList.toggle("directory-list", isList);
-    memberContainer.classList.toggle("directory-grid", !isList);
+    memberContainer.classList.toggle(
+        "directory-list",
+        isList
+    );
 
-    gridButton.classList.toggle("active", !isList);
-    listButton.classList.toggle("active", isList);
+    memberContainer.classList.toggle(
+        "directory-grid",
+        !isList
+    );
 
-    gridButton.setAttribute("aria-pressed", String(!isList));
-    listButton.setAttribute("aria-pressed", String(isList));
+    gridButton.classList.toggle(
+        "active",
+        !isList
+    );
+
+    listButton.classList.toggle(
+        "active",
+        isList
+    );
+
+    gridButton.setAttribute(
+        "aria-pressed",
+        String(!isList)
+    );
+
+    listButton.setAttribute(
+        "aria-pressed",
+        String(isList)
+    );
 }
 
 // Grid view button

@@ -399,6 +399,13 @@ main h1 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+
+    /*
+     * Reserve space before the member data
+     * is loaded by JavaScript.
+     * This helps prevent layout shift.
+     */
+    min-height: 600px;
 }
 
 /* ================================
@@ -406,6 +413,7 @@ main h1 {
    ================================ */
 
 .member-card {
+    min-height: 500px;
     overflow: hidden;
 
     background: #ffffff;
@@ -466,10 +474,13 @@ main h1 {
 
 .directory-list {
     display: block;
+    min-height: 0;
 }
 
 .directory-list .member-card {
     display: block;
+
+    min-height: 0;
 
     border-radius: 0;
     border-width: 1px 1px 0;
