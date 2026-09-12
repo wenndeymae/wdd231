@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Davao Business Chamber | Directory</title>
+
+    <meta
+        name="description"
+        content="Davao Business Chamber directory connecting local businesses and community members."
+    >
+    <meta name="author" content="Wenndey Mae Ubatay">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Davao Business Chamber Directory">
+    <meta
+        property="og:description"
+        content="Explore local businesses and organizations in the Davao Business Chamber directory."
+    >
+    <meta
+        property="og:image"
+        content="https://yourusername.github.io/wdd231/chamber/images/social.svg"
+    >
+    <meta
+        property="og:url"
+        content="https://yourusername.github.io/wdd231/chamber/directory.html"
+    >
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-inner">
+
+            <a
+                class="brand"
+                href="index.html"
+                aria-label="Davao Business Chamber home"
+            >
+                <img
+                    src="images/logo.svg"
+                    alt="Davao Business Chamber logo"
+                    width="52"
+                    height="52"
+                >
+
+                <span class="brand-text">
+                    <strong>Davao Business Chamber</strong>
+                    <span>Connecting businesses. Growing our community.</span>
+                </span>
+            </a>
+
+            <button
+                id="menu-button"
+                class="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navigation"
+            >
+            </button>
+
+        </div>
+
+        <nav id="navigation" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="discover.html">Discover</a>
+                </li>
+
+                <li>
+                    <a
+                        class="current"
+                        href="directory.html"
+                        aria-current="page"
+                    >
+                        Directory
+                    </a>
+                </li>
+
+                <li>
+                    <a href="join.html">Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1 class="page-title">Business Directory</h1>
+
+        <p class="intro">
+            Explore businesses and organizations connected with the Davao
+            Business Chamber. Use the buttons below to change how the
+            directory is displayed.
+        </p>
+
+        <!-- Directory View Controls -->
+        <div
+            class="view-controls"
+            aria-label="Directory view selection"
+        >
+            <button
+                id="grid-view"
+                class="view-button active"
+                type="button"
+                aria-pressed="true"
+            >
+                Grid View
+            </button>
+
+            <button
+                id="list-view"
+                class="view-button"
+                type="button"
+                aria-pressed="false"
+            >
+                List View
+            </button>
+        </div>
+
+        <!-- Member Directory -->
+        <section
+            id="member-container"
+            class="directory-grid"
+            aria-label="Chamber members"
+        >
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+
+            <div class="footer-contact">
+                <strong>Davao Business Chamber</strong>
+
+                <p>Davao City, Philippines</p>
+
+                <p>
+                    Email:
+                    <a href="mailto:info@example.com">
+                        info@example.com
+                    </a>
+                    |
+                    Phone:
+                    <a href="tel:+63825550100">
+                        +63 82 555 0100
+                    </a>
+                </p>
+            </div>
+
+            <ul class="social-links">
+                <li>
+                    <a
+                        href="https://github.com/wenndeymae/wdd231"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/wenndeymae/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://www.facebook.com/wenndeymae"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Facebook
+                    </a>
+                </li>
+            </ul>
+
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Wenndey Mae Ubatay | WDD 231
+            </p>
+
+            <p id="lastModified"></p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
