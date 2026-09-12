@@ -1,19 +1,19 @@
 [
   {
-    "name": "Lakeside Coffee Co.",
-    "address": "123 Main St",
-    "phone": "(555) 123-4567",
-    "website": "https://lakesidecoffee.example.com",
-    "image": "images/member1.jpg",
+    "name": "Chingkeetea",
+    "address": "Velez-Gaerlan Corner Velez-Gaerlan Sts.,",
+    "phone": "0965 906 4101",
+    "website": "https://chingkeetea.com/",
+    "image": "member1.svg",
     "level": 1,
     "category": "Restaurant"
   },
   {
-    "name": "Summit Fitness",
-    "address": "456 Oak Ave",
-    "phone": "(555) 234-5678",
-    "website": "https://summitfitness.example.com",
-    "image": "images/member2.jpg",
+    "name": "Anytime Fitness",
+    "address": "2/F, SM CDO Uptown Northwing, Masterson Ave, Carmen.,e",
+    "phone": "0917 687 8696",
+    "website": "https://www.anytimefitness.ph/",
+    "image": "member2.svg",
     "level": 2,
     "category": "Health"
   }
