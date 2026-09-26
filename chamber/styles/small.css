@@ -38,7 +38,7 @@ p {
 
 
 /* ================================
-   HEADER
+   HEADER AND NAVIGATION
    ================================ */
 
 header {
@@ -53,7 +53,6 @@ header {
     min-height: 76px;
     margin: 0 auto;
     padding: 0.75rem 1rem;
-
     display: grid;
     grid-template-columns: 1fr 44px;
     align-items: center;
@@ -64,7 +63,6 @@ header {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-
     color: #ffffff;
     text-decoration: none;
 }
@@ -88,24 +86,15 @@ header {
     font-size: 0.78rem;
 }
 
-
-/* ================================
-   MENU BUTTON
-   ================================ */
-
 .menu-button {
     width: 44px;
     height: 44px;
-
     border: 1px solid #ffffff;
     border-radius: 6px;
-
-    background: transparent;
+    background: #00000000;
     color: #ffffff;
-
     display: grid;
     place-items: center;
-
     font-size: 1.5rem;
     line-height: 1;
 }
@@ -123,11 +112,6 @@ header {
 .menu-button:focus-visible {
     background: #087e8b;
 }
-
-
-/* ================================
-   NAVIGATION
-   ================================ */
 
 nav {
     display: none;
@@ -147,7 +131,6 @@ nav.open {
 .nav-list a {
     display: block;
     padding: 0.85rem 1rem;
-
     color: #ffffff;
     text-decoration: none;
     border-radius: 4px;
@@ -170,7 +153,6 @@ main {
     padding: 2rem 0 3rem;
 }
 
-.page-title,
 main h1 {
     color: #0b3954;
     font-size: 2rem;
@@ -182,11 +164,6 @@ main h1 {
     margin-bottom: 1.5rem;
 }
 
-
-/* ================================
-   CONTENT GRID
-   ================================ */
-
 .content-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -195,26 +172,28 @@ main h1 {
 
 
 /* ================================
-   GENERAL CARDS
+   SHARED CARDS
    ================================ */
 
-.card {
-    overflow: hidden;
-
+.card,
+.join-form-section,
+.membership-levels,
+.thankyou-card {
     background: #ffffff;
     border: 1px solid #d6dde3;
     border-radius: 8px;
-
     box-shadow: 0 3px 10px #d6dde3;
+}
+
+.card {
+    overflow: hidden;
 }
 
 .card h2 {
     margin: 0;
     padding: 0.75rem 1rem;
-
     background: #173f5f;
     color: #ffffff;
-
     font-size: 1.05rem;
 }
 
@@ -233,7 +212,6 @@ main h1 {
 
 .location-content {
     padding: 1rem;
-
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -250,7 +228,7 @@ main h1 {
 
 
 /* ================================
-   CERTIFICATE
+   COURSE
    ================================ */
 
 .certificate {
@@ -259,22 +237,19 @@ main h1 {
 
 .course-buttons {
     padding: 1rem;
-
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-.filter-button {
-    padding: 0.55rem 1rem;
-
+.filter-button,
+.view-button {
+    padding: 0.6rem 1rem;
     border: 2px solid #173f5f;
     border-radius: 5px;
-
     background: #f4f7f9;
     color: #173f5f;
-
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .filter-button:hover,
@@ -284,14 +259,8 @@ main h1 {
     color: #ffffff;
 }
 
-
-/* ================================
-   COURSE CARDS
-   ================================ */
-
 .course-list {
     padding: 0 1rem 1rem;
-
     display: grid;
     grid-template-columns: 1fr;
     gap: 0.75rem;
@@ -299,10 +268,8 @@ main h1 {
 
 .course-card {
     padding: 1rem;
-
     border: 2px solid #d6dde3;
     border-radius: 6px;
-
     background: #f4f7f9;
 }
 
@@ -348,15 +315,9 @@ main h1 {
 }
 
 .view-button {
-    padding: 0.65rem 1rem;
-
-    border: 2px solid #0b3954;
-    border-radius: 5px;
-
+    border-color: #0b3954;
     background: #ffffff;
     color: #0b3954;
-
-    font-weight: 700;
 }
 
 .view-button:hover,
@@ -376,11 +337,9 @@ main h1 {
 .member-card {
     min-height: 500px;
     overflow: hidden;
-
     background: #ffffff;
     border: 1px solid #d4dde2;
     border-radius: 8px;
-
     box-shadow: 0 2px 8px #d4dde2;
 }
 
@@ -416,15 +375,11 @@ main h1 {
 
 .membership {
     display: inline-block;
-
     margin-top: 0.5rem;
     padding: 0.25rem 0.5rem;
-
     border-radius: 999px;
-
     background: #f2b134;
     color: #17212b;
-
     font-size: 0.85rem;
     font-weight: 700;
 }
@@ -435,12 +390,9 @@ main h1 {
 }
 
 .directory-list .member-card {
-    display: block;
     min-height: 0;
-
     border-radius: 0;
     border-width: 1px 1px 0;
-
     box-shadow: none;
 }
 
@@ -468,22 +420,13 @@ main h1 {
 
 
 /* ================================
-   JOIN PAGE
+   JOIN
    ================================ */
 
 .join-layout {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-}
-
-.join-form-section,
-.membership-levels,
-.thankyou-card {
-    background: #ffffff;
-    border: 1px solid #d6dde3;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px #d6dde3;
 }
 
 .join-form-section,
@@ -497,11 +440,6 @@ main h1 {
     color: #0b3954;
 }
 
-
-/* ================================
-   MEMBERSHIP FORM
-   ================================ */
-
 .membership-form {
     display: grid;
     gap: 1rem;
@@ -510,7 +448,6 @@ main h1 {
 .membership-form > label {
     display: grid;
     gap: 0.4rem;
-
     color: #17212b;
     font-weight: 600;
 }
@@ -521,10 +458,8 @@ main h1 {
 .membership-form textarea {
     width: 100%;
     padding: 0.75rem;
-
     border: 1px solid #aebbc4;
     border-radius: 5px;
-
     background: #ffffff;
     color: #17212b;
 }
@@ -545,15 +480,9 @@ main h1 {
     font-weight: 400;
 }
 
-
-/* ================================
-   MEMBERSHIP OPTIONS
-   ================================ */
-
 .membership-fieldset {
     margin: 0;
     padding: 1rem;
-
     border: 1px solid #aebbc4;
     border-radius: 5px;
 }
@@ -574,21 +503,13 @@ main h1 {
     margin-right: 0.5rem;
 }
 
-
-/* ================================
-   SUBMIT BUTTON
-   ================================ */
-
 .submit-button {
     width: 100%;
     padding: 0.85rem;
-
     border: 2px solid #0b3954;
     border-radius: 5px;
-
     background: #0b3954;
     color: #ffffff;
-
     font-weight: 700;
 }
 
@@ -609,15 +530,11 @@ main h1 {
 
 .membership-card {
     padding: 1.25rem;
-
     border: 1px solid #d4dde2;
     border-radius: 8px;
-
     background: #f4f7f9;
-
     opacity: 0;
     transform: translateY(20px);
-
     animation: membership-card-entry 0.7s ease-out forwards;
 }
 
@@ -660,13 +577,10 @@ main h1 {
 
 .modal-link {
     padding: 0.6rem 0.9rem;
-
     border: 2px solid #087e8b;
     border-radius: 5px;
-
     background: #ffffff;
     color: #087e8b;
-
     font-weight: 700;
 }
 
@@ -684,15 +598,13 @@ main h1 {
 dialog {
     width: min(90%, 500px);
     padding: 0;
-
     border: none;
     border-radius: 8px;
-
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 30px #0000004d;
 }
 
 dialog::backdrop {
-    background: rgba(0, 0, 0, 0.55);
+    background: #0000008c;
 }
 
 .modal-content {
@@ -711,13 +623,10 @@ dialog::backdrop {
 .close-modal {
     margin-top: 1rem;
     padding: 0.65rem 1rem;
-
     border: none;
     border-radius: 5px;
-
     background: #0b3954;
     color: #ffffff;
-
     font-weight: 700;
 }
 
@@ -728,7 +637,7 @@ dialog::backdrop {
 
 
 /* ================================
-   THANK YOU PAGE
+   THANK YOU
    ================================ */
 
 .thankyou-card {
@@ -750,7 +659,6 @@ dialog::backdrop {
 .application-information {
     margin-top: 1rem;
     padding: 1rem;
-
     border-left: 4px solid #087e8b;
     background: #f4f7f9;
 }
@@ -765,15 +673,11 @@ dialog::backdrop {
 
 .back-button {
     display: inline-block;
-
     margin-top: 1.5rem;
     padding: 0.75rem 1rem;
-
     border-radius: 5px;
-
     background: #0b3954;
     color: #ffffff;
-
     text-decoration: none;
     font-weight: 700;
 }
@@ -790,10 +694,8 @@ dialog::backdrop {
 
 footer {
     padding: 1.5rem 1rem;
-
     background: #0b3954;
     color: #ffffff;
-
     text-align: center;
 }
 
@@ -830,7 +732,6 @@ footer p {
     justify-content: center;
     flex-wrap: wrap;
     gap: 0.75rem;
-
     list-style: none;
     margin: 1rem 0;
     padding: 0;
@@ -838,15 +739,11 @@ footer p {
 
 .social-links a {
     display: inline-block;
-
     min-height: 44px;
     padding: 0.5rem 0.75rem;
-
     border-radius: 4px;
-
     background: #ffffff;
     color: #0b3954;
-
     text-decoration: none;
     font-weight: 600;
 }
@@ -869,7 +766,6 @@ footer p {
    ================================ */
 
 @media (prefers-reduced-motion: reduce) {
-
     *,
     *::before,
     *::after {
