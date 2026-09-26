@@ -1,0 +1,17 @@
+/* ================================
+   JOIN PAGE - LARGE SCREENS
+   ================================ */
+
+@media only screen and (min-width: 60rem) {
+
+    .join-layout {
+        grid-template-columns: 1.3fr 1fr;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .membership-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
