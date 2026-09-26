@@ -25,10 +25,6 @@ button {
     cursor: pointer;
 }
 
-a {
-    color: inherit;
-}
-
 h1,
 h2,
 h3,
@@ -38,7 +34,7 @@ p {
 
 
 /* ================================
-   HEADER AND NAVIGATION
+   HEADER
    ================================ */
 
 header {
@@ -154,9 +150,9 @@ main {
 }
 
 main h1 {
+    margin-bottom: 1rem;
     color: #0b3954;
     font-size: 2rem;
-    margin-bottom: 1rem;
 }
 
 .intro {
@@ -164,9 +160,19 @@ main h1 {
     margin-bottom: 1.5rem;
 }
 
-.content-grid {
+.content-grid,
+.course-list,
+.membership-cards,
+.join-layout {
     display: grid;
+}
+
+.content-grid,
+.course-list {
     grid-template-columns: 1fr;
+}
+
+.content-grid {
     gap: 1rem;
 }
 
@@ -197,11 +203,15 @@ main h1 {
     font-size: 1.05rem;
 }
 
-.card-content {
+.card-content,
+.location-content,
+.member-card-content {
     padding: 1rem;
 }
 
-.card-content p:last-child {
+.card-content p:last-child,
+.course-card p:last-child,
+.application-information p:last-child {
     margin-bottom: 0;
 }
 
@@ -211,7 +221,6 @@ main h1 {
    ================================ */
 
 .location-content {
-    padding: 1rem;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -235,10 +244,15 @@ main h1 {
     grid-column: 1 / -1;
 }
 
-.course-buttons {
-    padding: 1rem;
+.course-buttons,
+.view-controls,
+.social-links {
     display: flex;
     flex-wrap: wrap;
+}
+
+.course-buttons {
+    padding: 1rem;
     gap: 0.5rem;
 }
 
@@ -247,9 +261,18 @@ main h1 {
     padding: 0.6rem 1rem;
     border: 2px solid #173f5f;
     border-radius: 5px;
+    font-weight: 700;
+}
+
+.filter-button {
     background: #f4f7f9;
     color: #173f5f;
-    font-weight: 700;
+}
+
+.view-button {
+    border-color: #0b3954;
+    background: #ffffff;
+    color: #0b3954;
 }
 
 .filter-button:hover,
@@ -259,10 +282,15 @@ main h1 {
     color: #ffffff;
 }
 
+.view-button:hover,
+.view-button:focus-visible,
+.view-button.active {
+    background: #0b3954;
+    color: #ffffff;
+}
+
 .course-list {
     padding: 0 1rem 1rem;
-    display: grid;
-    grid-template-columns: 1fr;
     gap: 0.75rem;
 }
 
@@ -287,10 +315,6 @@ main h1 {
     margin-bottom: 0.4rem;
 }
 
-.course-card p:last-child {
-    margin-bottom: 0;
-}
-
 .status {
     color: #2e7d32;
     font-weight: 700;
@@ -308,23 +332,8 @@ main h1 {
    ================================ */
 
 .view-controls {
-    display: flex;
-    flex-wrap: wrap;
     gap: 0.75rem;
     margin-bottom: 1rem;
-}
-
-.view-button {
-    border-color: #0b3954;
-    background: #ffffff;
-    color: #0b3954;
-}
-
-.view-button:hover,
-.view-button:focus-visible,
-.view-button.active {
-    background: #0b3954;
-    color: #ffffff;
 }
 
 .directory-grid {
@@ -347,10 +356,6 @@ main h1 {
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
-}
-
-.member-card-content {
-    padding: 1rem;
 }
 
 .member-card h2 {
@@ -420,11 +425,10 @@ main h1 {
 
 
 /* ================================
-   JOIN
+   JOIN FORM
    ================================ */
 
 .join-layout {
-    display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
 }
@@ -524,7 +528,6 @@ main h1 {
    ================================ */
 
 .membership-cards {
-    display: grid;
     gap: 1rem;
 }
 
@@ -667,10 +670,6 @@ dialog::backdrop {
     margin-bottom: 0.75rem;
 }
 
-.application-information p:last-child {
-    margin-bottom: 0;
-}
-
 .back-button {
     display: inline-block;
     margin-top: 1.5rem;
@@ -728,9 +727,7 @@ footer p {
 }
 
 .social-links {
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 0.75rem;
     list-style: none;
     margin: 1rem 0;
