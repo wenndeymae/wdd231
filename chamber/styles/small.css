@@ -398,7 +398,7 @@ main h1 {
     min-height: 0;
     border-radius: 0;
     border-width: 1px 1px 0;
-    box-shadow: none;
+    box-shadow: 0 0 0 #00000000;
 }
 
 .directory-list .member-card:last-child {
@@ -626,7 +626,7 @@ dialog::backdrop {
 .close-modal {
     margin-top: 1rem;
     padding: 0.65rem 1rem;
-    border: none;
+    border: 0 solid #00000000;
     border-radius: 5px;
     background: #0b3954;
     color: #ffffff;
