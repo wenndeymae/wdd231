@@ -36,6 +36,7 @@ p {
     margin-top: 0;
 }
 
+
 /* ================================
    HEADER
    ================================ */
@@ -58,8 +59,6 @@ header {
     align-items: center;
     gap: 1rem;
 }
-
-/* Current Chamber brand */
 
 .brand {
     display: flex;
@@ -89,30 +88,12 @@ header {
     font-size: 0.78rem;
 }
 
-/* Older brand class kept for other pages */
-
-.site-brand {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.site-brand img {
-    width: 48px;
-    height: 48px;
-}
-
-.site-brand span {
-    font-size: 1rem;
-    font-weight: 600;
-}
 
 /* ================================
    MENU BUTTON
    ================================ */
 
-.menu-button,
-.hamburger {
+.menu-button {
     width: 44px;
     height: 44px;
 
@@ -129,48 +110,41 @@ header {
     line-height: 1;
 }
 
-.menu-button::before,
-.hamburger::before {
+.menu-button::before {
     content: "\2630";
 }
 
-.menu-button.open::before,
-.hamburger.show::before {
+.menu-button.open::before {
     content: "\00d7";
     font-size: 2rem;
 }
 
 .menu-button:hover,
-.menu-button:focus-visible,
-.hamburger:hover,
-.hamburger:focus-visible {
+.menu-button:focus-visible {
     background: #087e8b;
 }
+
 
 /* ================================
    NAVIGATION
    ================================ */
 
-nav,
-.navigation {
+nav {
     display: none;
     background: #0b3954;
 }
 
-nav.open,
-.navigation.show {
+nav.open {
     display: block;
 }
 
-.nav-list,
-.navigation ul {
+.nav-list {
     list-style: none;
     margin: 0;
     padding: 0 1rem 1rem;
 }
 
-.nav-list a,
-.navigation a {
+.nav-list a {
     display: block;
     padding: 0.85rem 1rem;
 
@@ -181,11 +155,10 @@ nav.open,
 
 .nav-list a:hover,
 .nav-list a:focus-visible,
-.nav-list a.current,
-.navigation a:hover,
-.navigation .current a {
+.nav-list a.current {
     background: #087e8b;
 }
+
 
 /* ================================
    MAIN
@@ -209,6 +182,7 @@ main h1 {
     margin-bottom: 1.5rem;
 }
 
+
 /* ================================
    CONTENT GRID
    ================================ */
@@ -219,8 +193,9 @@ main h1 {
     gap: 1rem;
 }
 
+
 /* ================================
-   CARDS
+   GENERAL CARDS
    ================================ */
 
 .card {
@@ -251,6 +226,7 @@ main h1 {
     margin-bottom: 0;
 }
 
+
 /* ================================
    LOCATION
    ================================ */
@@ -272,6 +248,7 @@ main h1 {
     margin-bottom: 0;
 }
 
+
 /* ================================
    CERTIFICATE
    ================================ */
@@ -279,10 +256,6 @@ main h1 {
 .certificate {
     grid-column: 1 / -1;
 }
-
-/* ================================
-   FILTER BUTTONS
-   ================================ */
 
 .course-buttons {
     padding: 1rem;
@@ -310,6 +283,7 @@ main h1 {
     background: #173f5f;
     color: #ffffff;
 }
+
 
 /* ================================
    COURSE CARDS
@@ -361,8 +335,9 @@ main h1 {
     text-align: right;
 }
 
+
 /* ================================
-   DIRECTORY VIEW CONTROLS
+   DIRECTORY
    ================================ */
 
 .view-controls {
@@ -391,26 +366,12 @@ main h1 {
     color: #ffffff;
 }
 
-/* ================================
-   DIRECTORY GRID
-   ================================ */
-
 .directory-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-
-    /*
-     * Reserve space before the member data
-     * is loaded by JavaScript.
-     * This helps prevent layout shift.
-     */
     min-height: 600px;
 }
-
-/* ================================
-   MEMBER CARDS
-   ================================ */
 
 .member-card {
     min-height: 500px;
@@ -468,10 +429,6 @@ main h1 {
     font-weight: 700;
 }
 
-/* ================================
-   DIRECTORY LIST VIEW
-   ================================ */
-
 .directory-list {
     display: block;
     min-height: 0;
@@ -479,7 +436,6 @@ main h1 {
 
 .directory-list .member-card {
     display: block;
-
     min-height: 0;
 
     border-radius: 0;
@@ -510,105 +466,6 @@ main h1 {
     margin: 0.15rem 0;
 }
 
-/* ================================
-   FOOTER
-   ================================ */
-
-footer {
-    padding: 1.5rem 1rem;
-
-    background: #0b3954;
-    color: #ffffff;
-
-    text-align: center;
-}
-
-footer p {
-    margin: 0.5rem 0;
-    font-size: 0.9rem;
-}
-
-.footer-inner {
-    width: min(100%, 1100px);
-    margin: 0 auto;
-}
-
-.footer-contact {
-    margin-bottom: 1.25rem;
-}
-
-.footer-contact p {
-    margin: 0.25rem 0;
-}
-
-.footer-contact a {
-    color: #ffffff;
-    text-decoration: underline;
-}
-
-.footer-contact a:hover,
-.footer-contact a:focus-visible {
-    color: #f2b134;
-}
-
-/* ================================
-   SOCIAL LINKS
-   ================================ */
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-
-    list-style: none;
-    margin: 1rem 0;
-    padding: 0;
-}
-
-.social-links a {
-    display: inline-block;
-
-    min-height: 44px;
-    padding: 0.5rem 0.75rem;
-
-    border-radius: 4px;
-
-    background: #ffffff;
-    color: #0b3954;
-
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.social-links a:hover,
-.social-links a:focus-visible {
-    background: #f2b134;
-    color: #17212b;
-}
-
-/* ================================
-   LAST MODIFIED
-   ================================ */
-
-#lastModified {
-    margin: 0;
-    color: #dbe9ee;
-    font-size: 0.9rem;
-}
-
-/* ================================
-   REDUCED MOTION
-   ================================ */
-
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        scroll-behavior: auto !important;
-        transition: none !important;
-    }
-}
 
 /* ================================
    JOIN PAGE
@@ -621,12 +478,17 @@ footer p {
 }
 
 .join-form-section,
-.membership-levels {
+.membership-levels,
+.thankyou-card {
     background: #ffffff;
     border: 1px solid #d6dde3;
     border-radius: 8px;
-    padding: 1.25rem;
     box-shadow: 0 3px 10px #d6dde3;
+}
+
+.join-form-section,
+.membership-levels {
+    padding: 1.25rem;
 }
 
 .join-form-section h2,
@@ -648,6 +510,7 @@ footer p {
 .membership-form > label {
     display: grid;
     gap: 0.4rem;
+
     color: #17212b;
     font-weight: 600;
 }
@@ -658,8 +521,10 @@ footer p {
 .membership-form textarea {
     width: 100%;
     padding: 0.75rem;
+
     border: 1px solid #aebbc4;
     border-radius: 5px;
+
     background: #ffffff;
     color: #17212b;
 }
@@ -675,9 +540,9 @@ footer p {
 }
 
 .field-help {
+    color: #53636d;
     font-size: 0.8rem;
     font-weight: 400;
-    color: #53636d;
 }
 
 
@@ -725,7 +590,6 @@ footer p {
     color: #ffffff;
 
     font-weight: 700;
-    cursor: pointer;
 }
 
 .submit-button:hover,
@@ -804,7 +668,6 @@ footer p {
     color: #087e8b;
 
     font-weight: 700;
-    cursor: pointer;
 }
 
 .modal-link:hover,
@@ -856,26 +719,11 @@ dialog::backdrop {
     color: #ffffff;
 
     font-weight: 700;
-    cursor: pointer;
 }
 
 .close-modal:hover,
 .close-modal:focus-visible {
     background: #087e8b;
-}
-
-
-/* ================================
-   REDUCED MOTION
-   ================================ */
-
-@media (prefers-reduced-motion: reduce) {
-
-    .membership-card {
-        animation: none;
-        opacity: 1;
-        transform: none;
-    }
 }
 
 
@@ -886,14 +734,7 @@ dialog::backdrop {
 .thankyou-card {
     max-width: 800px;
     margin: 0 auto;
-
     padding: 2rem;
-
-    background: #ffffff;
-    border: 1px solid #d6dde3;
-    border-radius: 8px;
-
-    box-shadow: 0 3px 10px #d6dde3;
 }
 
 .thankyou-card h1 {
@@ -940,4 +781,105 @@ dialog::backdrop {
 .back-button:hover,
 .back-button:focus-visible {
     background: #087e8b;
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+    padding: 1.5rem 1rem;
+
+    background: #0b3954;
+    color: #ffffff;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-inner {
+    width: min(100%, 1100px);
+    margin: 0 auto;
+}
+
+.footer-contact {
+    margin-bottom: 1.25rem;
+}
+
+.footer-contact p {
+    margin: 0.25rem 0;
+}
+
+.footer-contact a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-contact a:hover,
+.footer-contact a:focus-visible {
+    color: #f2b134;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.social-links a {
+    display: inline-block;
+
+    min-height: 44px;
+    padding: 0.5rem 0.75rem;
+
+    border-radius: 4px;
+
+    background: #ffffff;
+    color: #0b3954;
+
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+    background: #f2b134;
+    color: #17212b;
+}
+
+#lastModified {
+    margin: 0;
+    color: #dbe9ee;
+    font-size: 0.9rem;
+}
+
+
+/* ================================
+   REDUCED MOTION
+   ================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+
+    .membership-card {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
 }

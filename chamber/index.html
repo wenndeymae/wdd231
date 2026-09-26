@@ -47,31 +47,31 @@
 <body>
 
     <header>
-        <div class="site-brand">
-            <img src="images/logo.svg" alt="WDD 231 logo" width="48" height="48">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Davao Business Chamber home">
+                <img src="images/logo.svg" alt="Davao Business Chamber logo" width="52" height="52">
+                <span class="brand-text">
+                    <strong>Davao Business Chamber</strong>
+                    <span>Connecting businesses. Growing our community.</span>
+                </span>
+            </a>
 
-            <span>Wenndey Mae Ubatay</span>
+            <button id="menu-button" class="menu-button" type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navigation">
+            </button>
         </div>
 
-        <button id="nav-button" class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
-            aria-controls="nav-bar"></button>
+        <nav id="navigation" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a class="current" href="index.html" aria-current="page">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav id="nav-bar" class="navigation" aria-label="Main navigation">
-        <ul>
-            <li class="current">
-                <a href="index.html">Home</a>
-            </li>
-
-            <li>
-                <a href="directory.html">Chamber</a>
-            </li>
-
-            <li>
-                <a href="final/index.html">Final</a>
-            </li>
-        </ul>
-    </nav>
 
     <main>
         <h1>Home</h1>
