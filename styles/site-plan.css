@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap');
+
+:root {
+    --milk-tea-brown: #6B4226;
+    --cream: #FFF8EE;
+    --soft-pink: #E8A0A8;
+    --dark-brown: #2F241F;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cream);
+    color: var(--dark-brown);
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--milk-tea-brown);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    background-color: var(--white);
+    border-left: 6px solid var(--soft-pink);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+h2 {
+    color: var(--milk-tea-brown);
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: var(--milk-tea-brown);
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Color Scheme */
+
+.color-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.color-item {
+    border: 1px solid var(--soft-pink);
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+
+.color-item h3,
+.color-item p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.color-sample {
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.brown {
+    background-color: var(--milk-tea-brown);
+}
+
+.cream {
+    background-color: var(--cream);
+    border-bottom: 1px solid var(--soft-pink);
+}
+
+.pink {
+    background-color: var(--soft-pink);
+}
+
+.dark {
+    background-color: var(--dark-brown);
+}
+
+/* Typography */
+
+.font-heading {
+    font-family: "Poppins", sans-serif;
+}
+
+.font-body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.type-example {
+    background-color: var(--cream);
+    border-left: 4px solid var(--soft-pink);
+    margin-top: 1.5rem;
+    padding: 1rem;
+}
+
+.type-example h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+.type-example p {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Wireframe */
+
+.wireframe-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.wireframe-container figure {
+    text-align: center;
+}
+
+.wireframe-container img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border: 1px solid var(--dark-brown);
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: var(--dark-brown);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--milk-tea-brown);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Larger Screens */
+
+@media screen and (min-width: 600px) {
+    .color-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        padding: 3rem 2rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .wireframe-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
