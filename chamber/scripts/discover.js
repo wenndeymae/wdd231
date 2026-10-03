@@ -4,10 +4,12 @@ const discoverGrid = document.querySelector("#discover-grid");
 const visitMessage = document.querySelector("#visit-message");
 
 function displayDiscoverItems() {
-    discoverItems.forEach((item) => {
+    discoverItems.forEach((item, index) => {
         const card = document.createElement("article");
 
         card.className = `discover-card card-${item.id}`;
+
+        const isFirstImage = index === 0;
 
         card.innerHTML = `
             <h2>${item.name}</h2>
@@ -16,9 +18,11 @@ function displayDiscoverItems() {
                 <img
                     src="${item.image}"
                     alt="${item.name}"
-                    width="300"
-                    height="200"
-                    loading="${item.id === 1 ? "eager" : "lazy"}"
+                    width="692"
+                    height="462"
+                    loading="${isFirstImage ? "eager" : "lazy"}"
+                    ${isFirstImage ? 'fetchpriority="high"' : ""}
+                    decoding="async"
                 >
             </figure>
 

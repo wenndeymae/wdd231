@@ -29,6 +29,7 @@
         "card7"
         "card8";
     gap: 1rem;
+    min-height: 1800px;
 }
 
 .card-1 {
@@ -134,6 +135,7 @@
             "card4 card4"
             "card5 card6"
             "card7 card8";
+        min-height: 1200px;
     }
 
     .discover-card {
@@ -159,6 +161,7 @@
             "card1 card1 card4 card5"
             "card6 card7 card4 card8";
         gap: 1.25rem;
+        min-height: 850px;
     }
 
     .discover-card {
