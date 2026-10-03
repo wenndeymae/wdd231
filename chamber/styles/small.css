@@ -776,3 +776,125 @@ footer p {
         transform: none;
     }
 }
+
+/* ================================
+   DISCOVER
+   ================================ */
+
+.page-title {
+    margin-bottom: 1rem;
+}
+
+.visit-message {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-left: 4px solid #087e8b;
+    border-radius: 4px;
+    background: #e7f4f7;
+    color: #173f5f;
+    font-weight: 600;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    gap: 1rem;
+}
+
+.card-1 {
+    grid-area: card1;
+}
+
+.card-2 {
+    grid-area: card2;
+}
+
+.card-3 {
+    grid-area: card3;
+}
+
+.card-4 {
+    grid-area: card4;
+}
+
+.card-5 {
+    grid-area: card5;
+}
+
+.card-6 {
+    grid-area: card6;
+}
+
+.card-7 {
+    grid-area: card7;
+}
+
+.card-8 {
+    grid-area: card8;
+}
+
+.discover-card {
+    min-width: 0;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #d6dde3;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #d6dde3;
+}
+
+.discover-card h2 {
+    margin: 0;
+    padding: 0.85rem 1rem;
+    background: #173f5f;
+    color: #ffffff;
+    font-size: 1.15rem;
+}
+
+.discover-card figure {
+    margin: 0;
+    padding: 1rem 1rem 0;
+}
+
+.discover-card img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.discover-card address {
+    padding: 0.75rem 1rem 0;
+    color: #53636d;
+    font-size: 0.9rem;
+    font-style: normal;
+}
+
+.discover-card p {
+    margin: 0;
+    padding: 0.75rem 1rem 1rem;
+}
+
+.learn-more {
+    margin: 0 1rem 1rem;
+    padding: 0.65rem 1rem;
+    border: 2px solid #0b3954;
+    border-radius: 5px;
+    background: #0b3954;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.learn-more:hover,
+.learn-more:focus-visible {
+    background: #087e8b;
+    border-color: #087e8b;
+}
