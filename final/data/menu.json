@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Brown Sugar Pearl",
+    "category": "classic",
+    "categoryName": "Classic Milk Tea",
+    "price": 135,
+    "size": "Regular / Large",
+    "description": "Toasty brown sugar milk tea with chewy tapioca pearls.",
+    "sweetness": "25–100%",
+    "topping": "Tapioca pearls"
+  },
+  {
+    "name": "Wintermelon Classic",
+    "category": "classic",
+    "categoryName": "Classic Milk Tea",
+    "price": 130,
+    "size": "Regular / Large",
+    "description": "Smooth wintermelon tea with a light caramel sweetness.",
+    "sweetness": "25–100%",
+    "topping": "Tapioca pearls"
+  },
+  {
+    "name": "Classic Black Tea",
+    "category": "classic",
+    "categoryName": "Classic Milk Tea",
+    "price": 120,
+    "size": "Regular / Large",
+    "description": "A simple black tea milk blend for an easy everyday cup.",
+    "sweetness": "25–100%",
+    "topping": "Optional pearls"
+  },
+  {
+    "name": "Taro Cream",
+    "category": "creamy",
+    "categoryName": "Creamy Blends",
+    "price": 140,
+    "size": "Regular / Large",
+    "description": "Creamy taro with a gentle nutty sweetness.",
+    "sweetness": "25–100%",
+    "topping": "Coconut jelly"
+  },
+  {
+    "name": "Matcha Cloud",
+    "category": "creamy",
+    "categoryName": "Creamy Blends",
+    "price": 150,
+    "size": "Regular / Large",
+    "description": "Earthy matcha balanced with smooth milk and cream.",
+    "sweetness": "25–100%",
+    "topping": "Grass jelly"
+  },
+  {
+    "name": "Strawberry Cream",
+    "category": "creamy",
+    "categoryName": "Creamy Blends",
+    "price": 145,
+    "size": "Regular / Large",
+    "description": "Sweet strawberry tea finished with a creamy layer.",
+    "sweetness": "25–100%",
+    "topping": "Popping pearls"
+  },
+  {
+    "name": "Mango Passion",
+    "category": "fruity",
+    "categoryName": "Fruity Tea",
+    "price": 145,
+    "size": "Regular / Large",
+    "description": "Bright mango and passion fruit tea with a tropical finish.",
+    "sweetness": "25–100%",
+    "topping": "Mango jelly"
+  },
+  {
+    "name": "Lychee Rose",
+    "category": "fruity",
+    "categoryName": "Fruity Tea",
+    "price": 140,
+    "size": "Regular / Large",
+    "description": "Fragrant lychee tea with a soft rose note.",
+    "sweetness": "25–100%",
+    "topping": "Lychee jelly"
+  },
+  {
+    "name": "Peach Green Tea",
+    "category": "fruity",
+    "categoryName": "Fruity Tea",
+    "price": 135,
+    "size": "Regular / Large",
+    "description": "Refreshing green tea with juicy peach flavor.",
+    "sweetness": "25–100%",
+    "topping": "Aloe vera"
+  },
+  {
+    "name": "Calamansi Honey",
+    "category": "fruity",
+    "categoryName": "Fruity Tea",
+    "price": 125,
+    "size": "Regular / Large",
+    "description": "A bright calamansi tea sweetened with honey.",
+    "sweetness": "25–100%",
+    "topping": "No topping"
+  },
+  {
+    "name": "Passionfruit Green Tea",
+    "category": "fruity",
+    "categoryName": "Fruity Tea",
+    "price": 135,
+    "size": "Regular / Large",
+    "description": "Tart passionfruit paired with fresh green tea.",
+    "sweetness": "25–100%",
+    "topping": "Popping pearls"
+  },
+  {
+    "name": "Okinawa Latte",
+    "category": "coffee",
+    "categoryName": "Coffee & Tea",
+    "price": 150,
+    "size": "Regular / Large",
+    "description": "Roasted brown sugar flavor blended with creamy milk tea.",
+    "sweetness": "25–100%",
+    "topping": "Tapioca pearls"
+  },
+  {
+    "name": "Davao Coffee Milk",
+    "category": "coffee",
+    "categoryName": "Coffee & Tea",
+    "price": 145,
+    "size": "Regular / Large",
+    "description": "Smooth coffee and milk tea for a richer pick-me-up.",
+    "sweetness": "25–100%",
+    "topping": "Coffee jelly"
+  },
+  {
+    "name": "Hojicha Latte",
+    "category": "coffee",
+    "categoryName": "Coffee & Tea",
+    "price": 150,
+    "size": "Regular / Large",
+    "description": "Roasted Japanese tea notes softened with creamy milk.",
+    "sweetness": "25–100%",
+    "topping": "Grass jelly"
+  },
+  {
+    "name": "Chocolate Milk Tea",
+    "category": "creamy",
+    "categoryName": "Creamy Blends",
+    "price": 140,
+    "size": "Regular / Large",
+    "description": "Chocolate and milk tea combined into a comforting sweet drink.",
+    "sweetness": "25–100%",
+    "topping": "Chocolate pearls"
+  }
+]
