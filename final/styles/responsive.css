@@ -1,0 +1,94 @@
+/* ========================================
+   Responsive Styles
+   Davao Milk Tea Hub
+   ======================================== */
+
+
+/* Tablet */
+
+@media (min-width: 40rem) {
+
+  .container {
+    width: min(100% - 3rem, var(--max));
+  }
+
+  .hero {
+    padding: 5rem 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1.05fr .95fr;
+  }
+
+  .hero-copy {
+    order: 0;
+  }
+
+  .intro-grid {
+    grid-template-columns: .8fr 1.2fr;
+    align-items: start;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .experience-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .order-grid {
+    grid-template-columns: .75fr 1.25fr;
+    align-items: start;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.2fr .8fr 1fr;
+  }
+}
+
+
+/* Desktop */
+
+@media (min-width: 60rem) {
+
+  .menu-button {
+    display: none;
+  }
+
+  .site-navigation {
+    display: flex;
+  }
+
+  .hero {
+    padding: 6rem 0;
+  }
+
+  .hero-art {
+    min-height: 480px;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 39.99rem) {
+
+  .section-heading,
+  .cta-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

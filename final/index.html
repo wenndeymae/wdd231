@@ -30,8 +30,10 @@
   >
   <meta property="og:type" content="website">
 
+  <!-- Favicon -->
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -40,142 +42,283 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap"
   >
 
+  <!-- Main CSS -->
   <link rel="stylesheet" href="styles/style.css">
 
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="styles/responsive.css">
+
+  <!-- JavaScript -->
   <script type="module" src="scripts/app.js"></script>
 
   <title>Davao Milk Tea Hub | Home</title>
 </head>
+
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="Davao Milk Tea Hub home">
-      <span class="brand-mark" aria-hidden="true">🧋</span>
-      <span>Davao Milk Tea Hub</span>
-    </a>
-    <button class="menu-button" id="menu-button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-navigation">☰</button>
-    <nav id="site-navigation" class="site-navigation" aria-label="Main navigation">
-      <a class="active" href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="order.html">Order</a>
-    </nav>
-  </div>
-</header>
 
-<main>
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">A little sweetness from Davao</p>
-        <h1>Good tea.<br><span>Good mood.</span></h1>
-        <p class="hero-text">Freshly mixed milk tea drinks made for study breaks, friendly conversations, and everyday moments.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="menu.html">Explore the Menu</a>
-          <a class="button button-secondary" href="order.html">Place an Order</a>
-        </div>
-      </div>
-      <div class="hero-art" aria-label="Illustration of a milk tea drink" role="img">
-        <div class="cup">
-          <div class="cup-lid"></div>
-          <div class="straw"></div>
-          <div class="cup-body"><span>🧋</span></div>
-        </div>
-      </div>
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Davao Milk Tea Hub home"
+      >
+        <span class="brand-mark" aria-hidden="true">🧋</span>
+        <span>Davao Milk Tea Hub</span>
+      </a>
+
+      <button
+        class="menu-button"
+        id="menu-button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="site-navigation"
+      >
+        ☰
+      </button>
+
+      <nav
+        id="site-navigation"
+        class="site-navigation"
+        aria-label="Main navigation"
+      >
+        <a class="active" href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order</a>
+      </nav>
+
     </div>
-  </section>
+  </header>
 
-  <section class="intro section">
-    <div class="container intro-grid">
-      <div>
-        <p class="eyebrow">Welcome</p>
-        <h2>Your neighborhood milk tea stop</h2>
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+          <p class="eyebrow">A little sweetness from Davao</p>
+
+          <h1>
+            Good tea.<br>
+            <span>Good mood.</span>
+          </h1>
+
+          <p class="hero-text">
+            Freshly mixed milk tea drinks made for study breaks,
+            friendly conversations, and everyday moments.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="menu.html">
+              Explore the Menu
+            </a>
+
+            <a class="button button-secondary" href="order.html">
+              Place an Order
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="hero-art"
+          aria-label="Illustration of a milk tea drink"
+          role="img"
+        >
+          <div class="cup">
+            <div class="cup-lid"></div>
+            <div class="straw"></div>
+
+            <div class="cup-body">
+              <span>🧋</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <p>Whether you prefer classic brown sugar, fruity tea, or a creamy favorite, Davao Milk Tea Hub makes it easy to find a drink that fits your day. Browse the menu, learn about each flavor, and send an order request online.</p>
-    </div>
-  </section>
+    </section>
 
-  <section class="featured section">
-    <div class="container">
-      <div class="section-heading">
+    <!-- Introduction -->
+    <section class="intro section">
+      <div class="container intro-grid">
+
         <div>
-          <p class="eyebrow">Fan favorites</p>
-          <h2>Popular picks</h2>
+          <p class="eyebrow">Welcome</p>
+          <h2>Your neighborhood milk tea stop</h2>
         </div>
-        <a class="text-link" href="menu.html">View all drinks →</a>
-      </div>
-      <div class="feature-grid">
-        <article class="feature-card">
-          <div class="drink-icon brown" aria-hidden="true">🧋</div>
-          <h3>Brown Sugar Pearl</h3>
-          <p>Rich brown sugar milk tea with chewy tapioca pearls.</p>
-          <strong>₱135</strong>
-        </article>
-        <article class="feature-card">
-          <div class="drink-icon pink" aria-hidden="true">🧋</div>
-          <h3>Strawberry Cream</h3>
-          <p>Sweet strawberry tea balanced with a smooth creamy finish.</p>
-          <strong>₱145</strong>
-        </article>
-        <article class="feature-card">
-          <div class="drink-icon green" aria-hidden="true">🧋</div>
-          <h3>Matcha Cloud</h3>
-          <p>Earthy matcha blended with milk for a mellow afternoon drink.</p>
-          <strong>₱150</strong>
-        </article>
-      </div>
-    </div>
-  </section>
 
-  <section class="experience section">
-    <div class="container experience-grid">
-      <div class="experience-card">
-        <span class="number">01</span>
-        <h3>Choose your flavor</h3>
-        <p>Explore classics, creamy blends, fruity teas, and coffee-inspired drinks.</p>
-      </div>
-      <div class="experience-card">
-        <span class="number">02</span>
-        <h3>Make it yours</h3>
-        <p>Choose a size, sweetness level, and topping to match your preference.</p>
-      </div>
-      <div class="experience-card">
-        <span class="number">03</span>
-        <h3>Enjoy the moment</h3>
-        <p>Send an order request and make your next break a little sweeter.</p>
-      </div>
-    </div>
-  </section>
+        <p>
+          Whether you prefer classic brown sugar, fruity tea, or a creamy
+          favorite, Davao Milk Tea Hub makes it easy to find a drink that
+          fits your day. Browse the menu, learn about each flavor, and send
+          an order request online.
+        </p>
 
-  <section class="cta section">
-    <div class="container cta-inner">
+      </div>
+    </section>
+
+    <!-- Featured Drinks -->
+    <section class="featured section">
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <p class="eyebrow">Fan favorites</p>
+            <h2>Popular picks</h2>
+          </div>
+
+          <a class="text-link" href="menu.html">
+            View all drinks →
+          </a>
+
+        </div>
+
+        <div class="feature-grid">
+
+          <article class="feature-card">
+            <div class="drink-icon brown" aria-hidden="true">🧋</div>
+
+            <h3>Brown Sugar Pearl</h3>
+
+            <p>
+              Rich brown sugar milk tea with chewy tapioca pearls.
+            </p>
+
+            <strong>₱135</strong>
+          </article>
+
+          <article class="feature-card">
+            <div class="drink-icon pink" aria-hidden="true">🧋</div>
+
+            <h3>Strawberry Cream</h3>
+
+            <p>
+              Sweet strawberry tea balanced with a smooth creamy finish.
+            </p>
+
+            <strong>₱145</strong>
+          </article>
+
+          <article class="feature-card">
+            <div class="drink-icon green" aria-hidden="true">🧋</div>
+
+            <h3>Matcha Cloud</h3>
+
+            <p>
+              Earthy matcha blended with milk for a mellow afternoon drink.
+            </p>
+
+            <strong>₱150</strong>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience section">
+      <div class="container experience-grid">
+
+        <div class="experience-card">
+          <span class="number">01</span>
+
+          <h3>Choose your flavor</h3>
+
+          <p>
+            Explore classics, creamy blends, fruity teas,
+            and coffee-inspired drinks.
+          </p>
+        </div>
+
+        <div class="experience-card">
+          <span class="number">02</span>
+
+          <h3>Make it yours</h3>
+
+          <p>
+            Choose a size, sweetness level, and topping
+            to match your preference.
+          </p>
+        </div>
+
+        <div class="experience-card">
+          <span class="number">03</span>
+
+          <h3>Enjoy the moment</h3>
+
+          <p>
+            Send an order request and make your next break
+            a little sweeter.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta section">
+      <div class="container cta-inner">
+
+        <div>
+          <p class="eyebrow">Ready for a cup?</p>
+          <h2>Find your next favorite flavor.</h2>
+        </div>
+
+        <a class="button button-light" href="menu.html">
+          See the full menu
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+
+    <div class="container footer-grid">
+
       <div>
-        <p class="eyebrow">Ready for a cup?</p>
-        <h2>Find your next favorite flavor.</h2>
-      </div>
-      <a class="button button-light" href="menu.html">See the full menu</a>
-    </div>
-  </section>
-</main>
+        <h2>Davao Milk Tea Hub</h2>
 
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <h2>Davao Milk Tea Hub</h2>
-      <p>Tell us what you crave, and we’ll shake it up!</p>
+        <p>
+          Tell us what you crave, and we’ll shake it up!
+        </p>
+      </div>
+
+      <div>
+        <h2>Explore</h2>
+
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order</a>
+        <a href="attributions.html">Attributions</a>
+      </div>
+
+      <div>
+        <h2>Project video</h2>
+
+        <a
+          href="https://www.youtube.com/"
+          target="_blank"
+          rel="noopener"
+        >
+          Watch the project walkthrough
+        </a>
+
+        <p class="small">
+          Replace this link with your public 3–5 minute video before submission.
+        </p>
+      </div>
+
     </div>
-    <div>
-      <h2>Explore</h2>
-      <a href="menu.html">Menu</a>
-      <a href="order.html">Order</a>
-      <a href="attributions.html">Attributions</a>
-    </div>
-    <div>
-      <h2>Project video</h2>
-      <a href="https://www.youtube.com/" target="_blank" rel="noopener">Watch the project walkthrough</a>
-      <p class="small">Replace this link with your public 3–5 minute video before submission.</p>
-    </div>
-  </div>
-  <p class="copyright">© 2026 Davao Milk Tea Hub | WDD231 Individual Project</p>
-</footer>
+
+    <p class="copyright">
+      © 2026 Davao Milk Tea Hub | WDD231 Individual Project
+    </p>
+
+  </footer>
+
 </body>
 </html>
