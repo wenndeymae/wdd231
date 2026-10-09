@@ -6,15 +6,15 @@
 
     <meta
         name="description"
-        content="Sources and acknowledgements for the Davao Milk Tea Hub student website project."
+        content="Explore the sources, image credits, typefaces, and technologies used in the Davao Milk Tea Hub student website project."
     >
     <meta name="author" content="Wenndey Mae Ubatay">
 
-    <!-- Open Graph metadata -->
+    <!-- Open Graph Metadata -->
     <meta property="og:title" content="Davao Milk Tea Hub | Attributions">
     <meta
         property="og:description"
-        content="Acknowledgements for the typefaces and resources used in this student project."
+        content="View acknowledgements and resource credits for the Davao Milk Tea Hub student website."
     >
     <meta property="og:type" content="website">
     <meta
@@ -48,6 +48,7 @@
 </head>
 
 <body>
+    <!-- Skip Link -->
     <a class="skip-link" href="#main-content">
         Skip to main content
     </a>
@@ -55,7 +56,11 @@
     <!-- Header -->
     <header class="site-header">
         <div class="container header-inner">
-            <a class="brand" href="index.html">
+            <a
+                class="brand"
+                href="index.html"
+                aria-label="Davao Milk Tea Hub home"
+            >
                 <span aria-hidden="true">🧋</span>
                 Davao Milk Tea Hub
             </a>
@@ -79,24 +84,50 @@
                 <a href="index.html">Home</a>
                 <a href="menu.html">Menu</a>
                 <a href="order.html">Order</a>
+                <a href="attributions.html" class="active" aria-current="page">
+                    Attributions
+                </a>
             </nav>
         </div>
     </header>
 
     <!-- Main Content -->
     <main id="main-content">
+
+        <!-- Page Hero -->
         <section class="page-hero">
-            <div class="container">
-                <p class="eyebrow">Credits and resources</p>
-                <h1>Attributions</h1>
-                <p>
-                    Resources and technologies used to build this student project.
-                </p>
+            <div class="container page-hero-inner">
+                <div>
+                    <p class="eyebrow">Credits and resources</p>
+
+                    <h1>
+                        <span>Attributions.</span>
+                    </h1>
+
+                    <p>
+                        Explore the resources, technologies, and media
+                        used to create the Davao Milk Tea Hub student project.
+                    </p>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="page-hero-art">
+                    <img
+                        src="images/milk-tea-attributions.webp"
+                        alt="A milk tea drink with tapioca pearls representing the Davao Milk Tea Hub project"
+                        width="500"
+                        height="350"
+                        loading="lazy"
+                    >
+                </div>
             </div>
         </section>
 
+        <!-- Attribution Content -->
         <section class="section">
             <div class="container narrow content-panel">
+
+                <!-- Original Content -->
                 <h2>Original Content</h2>
                 <p>
                     Website text, drink descriptions, prices, and the local
@@ -104,6 +135,7 @@
                     student project.
                 </p>
 
+                <!-- Typefaces -->
                 <h2>Typefaces</h2>
                 <p>
                     <a
@@ -124,28 +156,70 @@
                     are provided by Google Fonts.
                 </p>
 
+                <!-- Technologies -->
                 <h2>Technologies</h2>
                 <p>
                     This website uses HTML5, CSS3, JavaScript ES modules,
-                    the Fetch API, browser local storage, and the HTML
-                    dialog element. No CSS framework or JavaScript library
-                    is used.
+                    the Fetch API, browser local storage, URL parameters,
+                    and the HTML dialog element. No CSS framework or
+                    JavaScript library is used.
                 </p>
 
+                <!-- Project Concept -->
                 <h2>Project Concept</h2>
                 <p>
                     Davao Milk Tea Hub is a fictional student project inspired
-                    by milk tea shops and local flavors in Davao City. It is
-                    not an operating business and does not accept real orders
-                    or payments.
+                    by milk tea shops and local flavors in Davao City.
+                    It is not an operating business and does not accept
+                    real orders or payments.
                 </p>
 
+                <!-- Image Credits -->
                 <h2>Image and Media Credits</h2>
                 <p>
-                    Any third-party photographs, illustrations, icons, or
-                    other media used on this website should be credited to
-                    their original creators and linked to their source here.
-                    Original project assets should be identified as such.
+                    Images and other media used in this project should be
+                    credited to their original creators. Add the creator's
+                    name and a link to the original source for each
+                    third-party image or media asset.
+                </p>
+
+                <p>
+                    Original illustrations and graphics created specifically
+                    for this student project should be identified as
+                    original project assets.
+                </p>
+
+                <p>
+                    <strong>Milk tea hero image:</strong>
+                    Add the image creator and original source here after
+                    confirming the source of
+                    <code>images/milk-tea-attributions.webp</code>.
+                </p>
+
+                <p>
+                    <strong>Favicon:</strong>
+                    <code>images/favicon.svg</code> — add the creator
+                    or source if this asset was obtained from a third party.
+                </p>
+
+                <!-- Project Disclaimer -->
+                <h2>Project Disclaimer</h2>
+                <p>
+                    This website was developed for the WDD231 individual
+                    course project. Menu items, prices, and order requests
+                    are for demonstration purposes only.
+                </p>
+
+                <p>
+                    No real transactions, payments, or shop orders are
+                    processed by this website.
+                </p>
+
+                <!-- Return Navigation -->
+                <p>
+                    <a class="text-link" href="index.html">
+                        &larr; Return to Home
+                    </a>
                 </p>
             </div>
         </section>
@@ -154,6 +228,7 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-grid">
+
             <div>
                 <h2>Davao Milk Tea Hub</h2>
                 <p>
@@ -174,17 +249,18 @@
             <div>
                 <h2>Project Video</h2>
                 <p>
-                    Watch the project demonstration using the public video
-                    link provided for the WDD231 individual project.
+                    Watch the project demonstration using the public
+                    video link provided for the WDD231 individual project.
                 </p>
-                <!-- Replace this paragraph with your public video link
-                     when your demonstration has been uploaded. -->
+
+                <!-- Replace this comment with your public video link
+                     after uploading your demonstration. -->
             </div>
         </div>
 
         <p class="copyright">
-            &copy; 2026 Davao Milk Tea Hub |
-            WDD231 Individual Project
+            &copy; <span id="current-year">2026</span>
+            Davao Milk Tea Hub | WDD231 Individual Project
         </p>
     </footer>
 </body>
