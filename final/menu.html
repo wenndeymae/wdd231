@@ -1,76 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Browse 15 milk tea drinks at Davao Milk Tea Hub and filter flavors by category.">
-  <meta name="author" content="Wenndey Mae Ubatay">
-  <meta property="og:title" content="Davao Milk Tea Hub | Menu">
-  <meta property="og:description" content="Browse the Davao Milk Tea Hub drink menu.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://wenndeymae.github.io/wdd231/final/menu.html">
-  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/responsive.css">
-  <script type="module" src="scripts/menu.js"></script>
-  <title>Davao Milk Tea Hub | Menu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Browse 15 milk tea drinks at Davao Milk Tea Hub and filter flavors by category and price."
+    >
+    <meta name="author" content="Wenndey Mae Ubatay">
+
+    <!-- Open Graph Metadata -->
+    <meta
+        property="og:title"
+        content="Davao Milk Tea Hub | Explore Our Milk Tea Menu"
+    >
+    <meta
+        property="og:description"
+        content="Explore classic favorites, fruity refreshments, creamy blends, and coffee-inspired drinks."
+    >
+    <meta property="og:type" content="website">
+    <meta
+        property="og:url"
+        content="https://wenndeymae.github.io/wdd231/final/menu.html"
+    >
+    <meta
+        property="og:image"
+        content="https://wenndeymae.github.io/wdd231/final/images/social-preview.svg"
+    >
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <!-- JavaScript -->
+    <script type="module" src="scripts/menu.js"></script>
+    <script src="scripts/navigation.js" defer></script>
+
+    <title>Davao Milk Tea Hub | Menu</title>
 </head>
+
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="Davao Milk Tea Hub home"><span class="brand-mark" aria-hidden="true">🧋</span><span>Davao Milk Tea Hub</span></a>
-    <button class="menu-button" id="menu-button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-navigation">☰</button>
-    <nav id="site-navigation" class="site-navigation" aria-label="Main navigation">
-      <a href="index.html">Home</a><a class="active" href="menu.html">Menu</a><a href="order.html">Order</a>
-    </nav>
-  </div>
-</header>
+    <!-- Skip Link -->
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
 
-<main>
-  <section class="page-hero">
-    <div class="container">
-      <p class="eyebrow">Freshly mixed</p>
-      <h1>Our menu</h1>
-      <p>Explore our full collection of milk tea favorites. Select a category or open a drink for more details.</p>
-    </div>
-  </section>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a
+                class="brand"
+                href="index.html"
+                aria-label="Davao Milk Tea Hub home"
+            >
+                <span aria-hidden="true">🧋</span>
+                Davao Milk Tea Hub
+            </a>
 
-  <section class="section menu-section">
-    <div class="container">
-      <div class="menu-controls">
-        <label for="category-filter">Filter by category</label>
-        <select id="category-filter">
-          <option value="all">All drinks</option>
-          <option value="classic">Classic Milk Tea</option>
-          <option value="fruity">Fruity Tea</option>
-          <option value="creamy">Creamy Blends</option>
-          <option value="coffee">Coffee & Tea</option>
-        </select>
-        <button class="button button-secondary small-button" id="clear-preference" type="button">Reset filter</button>
-      </div>
-      <p id="menu-status" class="status" aria-live="polite">Loading drinks...</p>
-      <div id="menu-grid" class="menu-grid"></div>
-    </div>
-  </section>
-</main>
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="site-navigation"
+            >
+                <span aria-hidden="true">☰</span>
+            </button>
 
-<dialog id="drink-dialog" class="drink-dialog">
-  <div class="dialog-inner">
-    <button id="dialog-close" class="dialog-close" type="button" aria-label="Close drink details">×</button>
-    <div id="dialog-content"></div>
-  </div>
-</dialog>
+            <nav
+                id="site-navigation"
+                class="site-navigation"
+                aria-label="Main navigation"
+            >
+                <a href="index.html">Home</a>
+                <a href="menu.html" class="active" aria-current="page">
+                    Menu
+                </a>
+                <a href="order.html">Order</a>
+            </nav>
+        </div>
+    </header>
 
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div><h2>Davao Milk Tea Hub</h2><p>Tell us what you crave, and we’ll shake it up!</p></div>
-    <div><h2>Explore</h2><a href="index.html">Home</a><a href="order.html">Order</a><a href="attributions.html">Attributions</a></div>
-    <div><h2>Project video</h2><a href="https://www.youtube.com/" target="_blank" rel="noopener">Watch the project walkthrough</a><p class="small">Replace this link with your public video.</p></div>
-  </div>
-  <p class="copyright">© 2026 Davao Milk Tea Hub | WDD231 Individual Project</p>
-</footer>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container page-hero-inner">
+                <div>
+                    <p class="eyebrow">Freshly mixed in Davao</p>
+
+                    <h1>
+                        Our <span>menu.</span>
+                    </h1>
+
+                    <p>
+                        Explore milk tea favorites, compare flavors and prices,
+                        and open any drink to see its details.
+                    </p>
+                </div>
+
+                <div class="page-hero-art" aria-hidden="true">
+                    🧋
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="section menu-section" id="menu-list">
+            <div class="container">
+
+                <!-- Section Heading -->
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Find your flavor</p>
+                        <h2>Drinks for every mood</h2>
+                    </div>
+
+                    <p class="muted" id="menu-count">
+                        Loading drinks...
+                    </p>
+                </div>
+
+                <!-- Menu Filters -->
+                <div class="menu-toolbar">
+                    <div class="filter-field">
+                        <label for="category-filter">
+                            Category
+                        </label>
+
+                        <select id="category-filter" name="category">
+                            <option value="all">All drinks</option>
+                            <option value="classic">Classic Milk Tea</option>
+                            <option value="fruity">Fruity Tea</option>
+                            <option value="creamy">Creamy Blends</option>
+                            <option value="coffee">Coffee &amp; Tea</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-field">
+                        <label for="sort-filter">
+                            Sort by
+                        </label>
+
+                        <select id="sort-filter" name="sort">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: low to high</option>
+                            <option value="price-high">Price: high to low</option>
+                            <option value="name">Name: A to Z</option>
+                        </select>
+                    </div>
+
+                    <button
+                        class="button button-secondary small-button"
+                        id="clear-preference"
+                        type="button"
+                    >
+                        Reset filters
+                    </button>
+                </div>
+
+                <!-- Menu Status -->
+                <p
+                    id="menu-status"
+                    class="status"
+                    role="status"
+                    aria-live="polite"
+                >
+                    Loading our drinks...
+                </p>
+
+                <!-- JavaScript Renders Drink Cards Here -->
+                <div
+                    id="menu-grid"
+                    class="menu-grid"
+                    aria-describedby="menu-status"
+                ></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Drink Details Dialog -->
+    <dialog
+        id="drink-dialog"
+        class="drink-dialog"
+        aria-labelledby="dialog-title"
+    >
+        <div class="dialog-inner">
+            <button
+                id="dialog-close"
+                class="dialog-close"
+                type="button"
+                aria-label="Close drink details"
+            >
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <!-- JavaScript Inserts Selected Drink Details Here -->
+            <div id="dialog-content"></div>
+        </div>
+    </dialog>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h2>Davao Milk Tea Hub</h2>
+                <p>
+                    Tell us what you crave, and we’ll shake it up!
+                </p>
+            </div>
+
+            <div>
+                <h2>Explore</h2>
+                <a href="index.html">Home</a>
+                <a href="order.html">Order</a>
+                <a href="attributions.html">Attributions</a>
+            </div>
+
+            <div>
+                <h2>Project Video</h2>
+                <p>
+                    Add your public 3–5 minute demonstration link here
+                    after uploading your recording.
+                </p>
+            </div>
+        </div>
+
+        <p class="copyright">
+            &copy; <span id="current-year">2026</span>
+            Davao Milk Tea Hub | WDD231 Individual Project
+        </p>
+    </footer>
 </body>
 </html>

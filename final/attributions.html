@@ -1,20 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Attributions and project resources for Davao Milk Tea Hub.">
-  <meta name="author" content="Wenndey Mae Ubatay">
-  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/responsive.css">
-  <title>Davao Milk Tea Hub | Attributions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Sources and acknowledgements for the Davao Milk Tea Hub student website project."
+    >
+    <meta name="author" content="Wenndey Mae Ubatay">
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Davao Milk Tea Hub | Attributions">
+    <meta
+        property="og:description"
+        content="Acknowledgements for the typefaces and resources used in this student project."
+    >
+    <meta property="og:type" content="website">
+    <meta
+        property="og:url"
+        content="https://wenndeymae.github.io/wdd231/final/attributions.html"
+    >
+    <meta
+        property="og:image"
+        content="https://wenndeymae.github.io/wdd231/final/images/social-preview.svg"
+    >
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+
+    <title>Davao Milk Tea Hub | Attributions</title>
 </head>
+
 <body>
-<header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><span class="brand-mark">🧋</span><span>Davao Milk Tea Hub</span></a><nav class="site-navigation always-visible"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="order.html">Order</a></nav></div></header>
-<main class="section"><div class="container narrow"><p class="eyebrow">Resources</p><h1>Attributions</h1><p>The written content and menu data in this project were created for the WDD231 individual project. The cup illustrations are original lightweight SVG artwork created for this project.</p><p>No third-party CSS framework or JavaScript library is used.</p><p>Replace this section with citations for any external images, text, icons, or data you add before submitting.</p></div></main>
-<footer class="site-footer"><p class="copyright">© 2026 Davao Milk Tea Hub | WDD231 Individual Project</p></footer>
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <span aria-hidden="true">🧋</span>
+                Davao Milk Tea Hub
+            </a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="site-navigation"
+            >
+                <span aria-hidden="true">☰</span>
+            </button>
+
+            <nav
+                id="site-navigation"
+                class="site-navigation"
+                aria-label="Main navigation"
+            >
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="order.html">Order</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Credits and resources</p>
+                <h1>Attributions</h1>
+                <p>
+                    Resources and technologies used to build this student project.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container narrow content-panel">
+                <h2>Original Content</h2>
+                <p>
+                    Website text, drink descriptions, prices, and the local
+                    JSON drink dataset were created for the Davao Milk Tea Hub
+                    student project.
+                </p>
+
+                <h2>Typefaces</h2>
+                <p>
+                    <a
+                        href="https://fonts.google.com/specimen/Open+Sans"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Open Sans
+                    </a>
+                    and
+                    <a
+                        href="https://fonts.google.com/specimen/Poppins"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Poppins
+                    </a>
+                    are provided by Google Fonts.
+                </p>
+
+                <h2>Technologies</h2>
+                <p>
+                    This website uses HTML5, CSS3, JavaScript ES modules,
+                    the Fetch API, browser local storage, and the HTML
+                    dialog element. No CSS framework or JavaScript library
+                    is used.
+                </p>
+
+                <h2>Project Concept</h2>
+                <p>
+                    Davao Milk Tea Hub is a fictional student project inspired
+                    by milk tea shops and local flavors in Davao City. It is
+                    not an operating business and does not accept real orders
+                    or payments.
+                </p>
+
+                <h2>Image and Media Credits</h2>
+                <p>
+                    Any third-party photographs, illustrations, icons, or
+                    other media used on this website should be credited to
+                    their original creators and linked to their source here.
+                    Original project assets should be identified as such.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h2>Davao Milk Tea Hub</h2>
+                <p>
+                    Tell us what you crave, and we’ll shake it up!
+                </p>
+            </div>
+
+            <div>
+                <h2>Explore</h2>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="order.html">Order</a>
+                <a href="attributions.html" aria-current="page">
+                    Attributions
+                </a>
+            </div>
+
+            <div>
+                <h2>Project Video</h2>
+                <p>
+                    Watch the project demonstration using the public video
+                    link provided for the WDD231 individual project.
+                </p>
+                <!-- Replace this paragraph with your public video link
+                     when your demonstration has been uploaded. -->
+            </div>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Davao Milk Tea Hub |
+            WDD231 Individual Project
+        </p>
+    </footer>
 </body>
 </html>

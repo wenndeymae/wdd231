@@ -1,29 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Order request confirmation for Davao Milk Tea Hub.">
-  <meta name="author" content="Wenndey Mae Ubatay">
-  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/responsive.css">
-  <script type="module" src="scripts/thankyou.js"></script>
-  <title>Davao Milk Tea Hub | Order Submitted</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Review the order request details submitted to the Davao Milk Tea Hub student project."
+    >
+    <meta name="author" content="Wenndey Mae Ubatay">
+
+    <!-- Open Graph Metadata -->
+    <meta
+        property="og:title"
+        content="Davao Milk Tea Hub | Request Summary"
+    >
+    <meta
+        property="og:description"
+        content="Review your selected drink and preferences on the request summary page."
+    >
+    <meta property="og:type" content="website">
+    <meta
+        property="og:url"
+        content="https://wenndeymae.github.io/wdd231/final/thankyou.html"
+    >
+    <meta
+        property="og:image"
+        content="https://wenndeymae.github.io/wdd231/final/images/social-preview.svg"
+    >
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <!-- JavaScript Modules -->
+    <script type="module" src="scripts/thankyou.js"></script>
+    <script src="scripts/navigation.js" defer></script>
+
+    <title>Davao Milk Tea Hub | Request Summary</title>
 </head>
+
 <body>
-<header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><span class="brand-mark">🧋</span><span>Davao Milk Tea Hub</span></a><nav class="site-navigation always-visible"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="order.html">Order</a></nav></div></header>
-<main class="confirmation">
-  <div class="container confirmation-card">
-    <p class="eyebrow">Thank you</p>
-    <h1>Your request was received.</h1>
-    <p id="submitted-details">Thank you for trying the Davao Milk Tea Hub ordering experience.</p>
-    <a class="button button-primary" href="menu.html">Back to menu</a>
-  </div>
-</main>
-<footer class="site-footer"><p class="copyright">© 2026 Davao Milk Tea Hub | WDD231 Individual Project</p></footer>
+    <!-- Skip Navigation -->
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <span aria-hidden="true">🧋</span>
+                Davao Milk Tea Hub
+            </a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="site-navigation"
+            >
+                <span aria-hidden="true">☰</span>
+            </button>
+
+            <nav
+                id="site-navigation"
+                class="site-navigation"
+                aria-label="Main navigation"
+            >
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="order.html">Order</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <section class="section confirmation">
+            <div class="container narrow">
+                <div class="confirmation-card">
+                    <p class="eyebrow">Request Summary</p>
+
+                    <h1 id="confirmation-title">
+                        Your Order Summary
+                    </h1>
+
+                    <p id="confirmation-intro">
+                        Review the information submitted with your form.
+                    </p>
+
+                    <!-- JavaScript inserts the submitted details here -->
+                    <dl
+                        id="order-summary"
+                        class="summary-list"
+                        aria-label="Submitted order details"
+                    ></dl>
+
+                    <!-- Status and error messages -->
+                    <p
+                        id="summary-status"
+                        class="status"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                    <!-- Navigation Actions -->
+                    <div class="hero-actions centered-actions">
+                        <a class="button button-primary" href="menu.html">
+                            Back to Menu
+                        </a>
+
+                        <a class="button button-secondary" href="order.html">
+                            New Request
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h2>Davao Milk Tea Hub</h2>
+                <p>
+                    Tell us what you crave, and we’ll shake it up!
+                </p>
+            </div>
+
+            <div>
+                <h2>Explore</h2>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="order.html">Order</a>
+                <a href="attributions.html">Attributions</a>
+            </div>
+
+            <div>
+                <h2>Project Video</h2>
+                <p>
+                    Add your public 3–5 minute demonstration link here
+                    after uploading your recording.
+                </p>
+            </div>
+        </div>
+
+        <p class="copyright">
+            &copy; <span id="current-year">2026</span>
+            Davao Milk Tea Hub | WDD231 Individual Project
+        </p>
+    </footer>
 </body>
 </html>

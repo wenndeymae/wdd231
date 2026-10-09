@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Send an order request to Davao Milk Tea Hub using the online customer form.">
+  <meta name="author" content="Wenndey Mae Ubatay">
+  <meta property="og:title" content="Davao Milk Tea Hub | Order">
+  <meta property="og:description" content="Send an order request to Davao Milk Tea Hub.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wenndeymae.github.io/wdd231/final/order.html">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <script type="module" src="scripts/form.js"></script>
+  <title>Davao Milk Tea Hub | Order</title>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Davao Milk Tea Hub home"><span class="brand-mark" aria-hidden="true">🧋</span><span>Davao Milk Tea Hub</span></a>
+    <button class="menu-button" id="menu-button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-navigation">☰</button>
+    <nav id="site-navigation" class="site-navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="menu.html">Menu</a><a class="active" href="order.html">Order</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Make it yours</p>
+      <h1>Order request</h1>
+      <p>Design your dream drink: Choose your base, pick your milk, and stack your favorite boba.</p>
+    </div>
+  </section>
+
+  <section class="section order-section">
+    <div class="container order-grid">
+      <aside class="order-info">
+        <p class="eyebrow">Simple steps</p>
+        <h2>Plan your drink</h2>
+        <p>Choose a drink, size, sweetness, and topping. Add your preferred pickup or delivery details, then submit the form.</p>
+        <ul class="check-list">
+          <li>Choose your favorite flavor.</li>
+          <li>Select your preferred options.</li>
+          <li>Send your request.</li>
+        </ul>
+      </aside>
+
+      <form class="order-form" action="thankyou.html" method="get" id="order-form">
+        <div class="form-row">
+          <label for="full-name">Full name
+            <input id="full-name" name="fullName" type="text" autocomplete="name" required>
+          </label>
+          <label for="phone-number">Phone Number
+            <input id="phone-number" name="phone-number" type="phone-number" autocomplete="phone-number" required>
+          </label>
+        </div>
+        <div class="form-row">
+          <label for="drink">Drink
+            <select id="drink" name="drink" required>
+              <option value="">Choose a drink</option>
+              <option>Brown Sugar Pearl</option>
+              <option>Wintermelon Classic</option>
+              <option>Classic Black Tea</option>
+              <option>Strawberry Cream</option>
+              <option>Matcha Cloud</option>
+              <option>Taro Cream</option>
+              <option>Mango Passion</option>
+              <option>Lychee Rose</option>
+              <option>Peach Green Tea</option>
+              <option>Calamansi Honey</option>
+              <option>Passionfruit Green Tea</option>
+              <option>Okinawa Latte</option>
+              <option>Davao Coffee Milk</option>
+              <option>Hojicha Latte</option>
+              <option>Chocolate Milk Tea</option>
+            </select>
+          </label>
+          <label for="size">Size
+            <select id="size" name="size" required>
+              <option value="">Choose size</option>
+              <option>Regular</option>
+              <option>Large</option>
+            </select>
+          </label>
+        </div>
+        <fieldset>
+          <legend>Sweetness</legend>
+          <label class="radio"><input type="radio" name="sweetness" value="0%" required> 0%</label>
+          <label class="radio"><input type="radio" name="sweetness" value="25%" required> 25%</label>
+          <label class="radio"><input type="radio" name="sweetness" value="50%"> 50%</label>
+          <label class="radio"><input type="radio" name="sweetness" value="75%"> 75%</label>
+          <label class="radio"><input type="radio" name="sweetness" value="100%"> 100%</label>
+        </fieldset>
+        <label for="topping">Topping
+          <select id="topping" name="topping">
+            <option value="Pearls">Pearls</option>
+            <option value="Pearls">Baby Pearls</option>
+            <option value="Pudding">Chocolate pudding</option>
+            <option value="Pudding">Egg pudding</option>
+            <option value="Jelly">Coffee jelly</option>
+            <option value="Bobba">Popping Bobba</option>
+            <option value="None">No topping</option>
+          </select>
+        </label>
+        <label for="notes">Additional notes
+          <textarea id="notes" name="notes" rows="5" maxlength="300" placeholder="Add any useful order notes."></textarea>
+        </label>
+        <label class="consent"><input type="checkbox" name="agreement" required> I understand this is a website project demonstration.</label>
+        <button class="button button-primary" type="submit">Submit order request</button>
+        <p id="form-message" class="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><h2>Davao Milk Tea Hub</h2><p>Tell us what you crave, and we’ll shake it up!</p></div>
+    <div><h2>Explore</h2><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="attributions.html">Attributions</a></div>
+    <div><h2>Project video</h2><a href="https://www.youtube.com/" target="_blank" rel="noopener">Watch the project walkthrough</a><p class="small">Replace this link with your public video.</p></div>
+  </div>
+  <p class="copyright">© 2026 Davao Milk Tea Hub | WDD231 Individual Project</p>
+</footer>
+</body>
+</html>

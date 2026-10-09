@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "Brown Sugar Pearl",
+    "category": "classic",
+    "price": 135,
+    "description": "Black tea and milk with a deep brown sugar finish.",
+    "sizes": "Regular / Large",
+    "sweetness": "0–100%",
+    "topping": "Tapioca pearls",
+    "icon": "🧋",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Classic Pearl Milk Tea",
+    "category": "classic",
+    "price": 125,
+    "description": "Traditional milk tea paired with chewy pearls.",
+    "sizes": "Regular / Large",
+    "sweetness": "0–100%",
+    "topping": "Tapioca pearls",
+    "icon": "🧋"
+  },
+  {
+    "id": 3,
+    "name": "Wintermelon Milk Tea",
+    "category": "classic",
+    "price": 130,
+    "description": "A mellow wintermelon flavor blended with milk tea.",
+    "sizes": "Regular / Large",
+    "sweetness": "0–100%",
+    "topping": "Grass jelly",
+    "icon": "🥤"
+  },
+  {
+    "id": 4,
+    "name": "Jasmine Milk Tea",
+    "category": "classic",
+    "price": 125,
+    "description": "Floral jasmine tea softened with creamy milk.",
+    "sizes": "Regular / Large",
+    "sweetness": "0–100%",
+    "topping": "Tapioca pearls",
+    "icon": "🍃"
+  },
+  {
+    "id": 5,
+    "name": "Thai Milk Tea",
+    "category": "classic",
+    "price": 140,
+    "description": "Fragrant Thai-style tea with a creamy finish.",
+    "sizes": "Regular / Large",
+    "sweetness": "0–100%",
+    "topping": "Pudding",
+    "icon": "🧋"
+  },
+  {
+    "id": 6,
+    "name": "Matcha Cloud",
+    "category": "creamy",
+    "price": 150,
+    "description": "Earthy matcha blended with milk.",
+    "sizes": "Regular / Large",
+    "sweetness": "0–100%",
+    "topping": "Cream foam",
+    "icon": "🍵",
+    "featured": true
+  },
+  {
+    "id": 7,
+    "name": "Taro Dream",
+    "category": "creamy",
+    "price": 145,
+    "description": "A gently sweet taro blend with a velvety texture.",
+    "sizes": "Regular / Large",
+    "sweetness": "0–100%",
+    "topping": "Tapioca pearls",
+    "icon": "💜"
+  },
+  {
+    "id": 8,
+    "name": "Strawberry Cream",
+    "category": "fruity",
+    "price": 145,
+    "description": "Sweet strawberry tea with a smooth creamy finish.",
+    "sizes": "Regular / Large",
+    "sweetness": "0–100%",
+    "topping": "Popping pearls",
+    "icon": "🍓",
+    "featured": true
+  },
+  {
+    "id": 9,
+    "name": "Mango Sunrise",
+    "category": "fruity",
+    "price": 140,
+    "description": "Bright mango tea with a tropical finish.",
+    "sizes": "Regular / Large",
+    "sweetness": "0–100%",
+    "topping": "Mango jelly",
+    "icon": "🥭"
+  },
+  {
+    "id": 10,
+    "name": "Lychee Green Tea",
+    "category": "fruity",
+    "price": 135,
+    "description": "Delicate green tea with fragrant lychee.",
+    "sizes": "Regular / Large",
+    "sweetness": "0–100%",
+    "topping": "Lychee jelly",
+    "icon": "🍈"
+  },
+  {
+    "id": 11,
+    "name": "Passion Fruit Tea",
+    "category": "fruity",
+    "price": 135,
+    "description": "Tangy passion fruit blended with refreshing tea.",
+    "sizes": "Regular / Large",
+    "sweetness": "0–100%",
+    "topping": "Aloe vera",
+    "icon": "🍹"
+  },
+  {
+    "id": 12,
+    "name": "Peach Oolong Tea",
+    "category": "fruity",
+    "price": 140,
+    "description": "Toasty oolong tea with a mellow peach aroma.",
+    "sizes": "Regular / Large",
+    "sweetness": "0–100%",
+    "topping": "Peach jelly",
+    "icon": "🍑"
+  },
+  {
+    "id": 13,
+    "name": "Chocolate Cookie Cream",
+    "category": "creamy",
+    "price": 155,
+    "description": "Chocolate milk tea with cookie notes and cream.",
+    "sizes": "Regular / Large",
+    "sweetness": "0–100%",
+    "topping": "Cookie crumbs",
+    "icon": "🍫"
+  },
+  {
+    "id": 14,
+    "name": "Caramel Coffee Milk Tea",
+    "category": "coffee",
+    "price": 150,
+    "description": "Coffee and milk tea with a caramel finish.",
+    "sizes": "Regular / Large",
+    "sweetness": "0–100%",
+    "topping": "Coffee jelly",
+    "icon": "☕"
+  },
+  {
+    "id": 15,
+    "name": "Dirty Matcha Latte",
+    "category": "coffee",
+    "price": 160,
+    "description": "Earthy matcha layered with a bold coffee note.",
+    "sizes": "Regular / Large",
+    "sweetness": "0–100%",
+    "topping": "Cream foam",
+    "icon": "🍵"
+  }
+]
